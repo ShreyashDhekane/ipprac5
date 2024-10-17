@@ -1,4 +1,3 @@
-// Generator function to produce prime numbers up to a given limit
 function* generatePrimes(limit) {
     function isPrime(num) {
         if (num < 2) return false;
@@ -15,8 +14,7 @@ function* generatePrimes(limit) {
     }
 }
 
-// Example usage
-const limit = 100;  // Set the limit here
+const limit = 100;  
 const primeGenerator = generatePrimes(limit);
 
 for (let prime of primeGenerator) {
