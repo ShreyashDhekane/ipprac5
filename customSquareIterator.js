@@ -1,6 +1,5 @@
-// Custom iterable object
 const squaredNumbers = {
-    numbers: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],  // You can modify this array as needed
+    numbers: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],  
     
     [Symbol.iterator]() {
         let index = 0;
@@ -11,9 +10,9 @@ const squaredNumbers = {
                 if (index < numbers.length) {
                     const value = numbers[index];
                     index++;
-                    return { value: value * value, done: false };  // Return the square of the number
+                    return { value: value * value, done: false }; 
                 } else {
-                    return { done: true };  // End of iteration
+                    return { done: true };  
                 }
             }
         };
